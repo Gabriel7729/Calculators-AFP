@@ -1,3 +1,50 @@
-.contribution-calculator {
+.pension-calculator {
+  .header-container {
+    .line {
+      width: 100%;
+      margin: auto;
+      background: linear-gradient(to right, #e97c29 40%, #fcbc46 100%);
+      height: 5px;
+    }
+    .content-wrapper{
+      margin:auto;
+      background: linear-gradient(to right, #e97c29 40%, #fcbc46 100%);
+      clip-path: polygon(24% 0, 77% 0, 76% 80%, 25% 80%);
+      padding: 1px;
+      .section-title{
+        width: 100%;
+        color: white;
+        font-size: 35px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 auto 30px;
+        text-align: center;
+        padding: 8px 8px 8px 18px;
+        position: relative;
+      }
+      // .section-title {
+      //   ::before{
+      //     left: -18px;
+      //     transform: skewX(20deg);
+      //   }
+      // }
+      // .section-title {
+      //   ::after{
+      //     right: -18px;
+      //     transform: skewX(-20deg);
+      //   }
+      // }
+      // .section-title:before, .section-title:after {
+      //   content: "";
+      //   background: white;
+      //   width: 40px;
+      //   height: 80px;
+      //   position: absolute;
+      //   top: 0;
+      // }
+    }
+  }
+  .container{
 
+  }
 }
