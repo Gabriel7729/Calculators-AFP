@@ -22,9 +22,122 @@
       </div>
       <div class="container">
         <div class="form-container">
-          <form action="">
-            
+          <form class="form" action="">
+            <div class="label">
+              Total de ingresos mensuales (en RD$)
+            </div>
+            <div class="input">
+              <input class="input-form" type="text" placeholder="0.00">
+              <div class="text-under-input">
+                Salario Maxímo Cotizable. RD$312,000.00
+              </div>
+            </div>
+            <div class="btn-calculate">
+              <button class="btn btn-primary">Calcular</button>
+            </div>
           </form>
+          <div class="title-table">
+            <p>Partidas</p> 
+          </div>
+          <div class="tables">
+            <table class="table">
+              <thead>
+                <tr class="firts-row">
+                  <td class="firts-row td-blank"></td>
+                  <td class="firts-row td-distribution">Distribución <br /> Porcentual (%)</td>
+                  <td class="firts-row td-distribution">Distribución <br /> Absoluta</td>
+                  <td class="firts-row td-blank-total"></td>
+                </tr>
+                <tr class="table-header">
+                  <th class="table-header th-blank"></th>
+                  <th class="table-header th-pension">Pensiones</th>
+                  <th class="table-header th-pension">Pensiones</th>
+                  <th class="table-header th-total">Totales</th>
+                </tr>
+              </thead>
+              <tbody class="table-content">
+                <tr>
+                  <td class="table-content td-content-blank">Aporte de tu Cuenta de Pensión</td>
+                  <td class="table-content td-content-pension">8.40</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+                <tr>
+                  <td class="table-content td-content-blank">Seguro de Sobrevivencia y Discapacidad</td>
+                  <td class="table-content td-content-pension">0.95</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+                <tr>
+                  <td class="table-content td-content-blank">Fondo de Solidaridad</td>
+                  <td class="table-content td-content-pension">0.40</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+                <tr>
+                  <td class="table-content td-content-blank">Operaciones SIPEN</td>
+                  <td class="table-content td-content-pension">0.07</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+                <tr>
+                  <td class="table-content td-content-blank">Operaciones TSS</td>
+                  <td class="table-content td-content-pension">8.40</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+                <tr>
+                  <td class="table-content td-content-blank">Operaciones DIDA</td>
+                  <td class="table-content td-content-pension">0.05</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-total"></td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table-distribution">
+              <thead>
+                <tr class="table-header">
+                  <th colspan="5" class="table-header th-pension">Distribución del aporte</th>
+                </tr>
+              </thead>
+              <tbody class="table-content">
+                <tr>
+                  <td class="table-content td-content-blank">Del afiliado</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content-pension">0.00</td>
+                  <td class="table-content td-content"></td>
+                </tr>
+                <tr class="table-content-second">
+                  <td class="table-content-second td-content-blank">Del empleador</td>
+                  <td class="table-content-second td-content-pension">0.00</td>
+                  <td class="table-content-second td-content-pension">0.00</td>
+                  <td class="table-content-second td-content-total">0.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="note">
+            <p>Nota: El salario mínimo cotizable es de RD$13,482.00 y el salario máximo cotizable es de RD$269,640.00 según lo establecido en la Resolución 371-04 CNSS del 03 de Septiembre del 2015, emitida por el Consejo Nacional de Seguridad Social (CNSS), y el artículo 57 de la Ley 87-01 que define el límite mínimo y máximo del salario cotizable.</p>
+          </div>
+          <div class="text">
+            <p>Salario cotizable: es la suma del salario mensual + comisiones (si las hay), + bono vacacional, es decir todas las retribuciones que tiene un asegurado en un año de trabajo.
+              <br /><br />
+              CCI: La cuenta de capitalización individual (CCI) es el registro individual unificado de los aportes que son propiedad exclusiva de cada afiliado. Este registro comprende todos los aportes voluntarios y obligatorios, el monto que corresponda al bono de reconocimiento cuando se haga efectivo, si aplica, pago de prestaciones y la rentabilidad que le corresponda del fondo administrativo.
+              <br /><br />
+              Seguro de Vida Personal: Este seguro se financia con el 0.95% del salario cotizable, como parte del aporte mensual que realiza el empleado y el empleador, el mismo otorga al afiliado el derecho a recibir una pensión por Discapacidad y Sobrevivencia.
+              <br /><br />
+              SIPEN: Institución creada en la Ley 87-01 como entidad estatal autónoma, con personalidad jurídica y patrimonio propio, que a nombre del Estado Dominicano ejerce la función de velar por el cumplimiento de la Ley en el ámbito previsional y sus normas complementarias.
+              <br /><br />
+              Fondo de Solidaridad Social: Fondo creado a favor de los afiliados de ingresos bajos, mayores de 65 años de edad, que hayan cotizado durante por lo menos 300 meses en cualquiera de los sistemas de pensión vigentes y cuya cuenta personal no acumule lo suficiente para cubrirla. Este fondo está bajo la administración de la AFP Pública.
+              <br /><br />
+              La Tesorería de la Seguridad Social (TSS): Es un organismo dependiente del Consejo Nacional de Seguridad Social (ambos creados por la Ley 87-01), y tiene como objetivo fundamental tener a su cargo el Sistema Único de Información y el proceso de recaudo, distribución y el pago a todas las instituciones participantes públicas y privadas garantizando regularidad, transparencia, seguridad, eficiencia e igualdad.
+              <br /><br />
+              Dirección General de Información y Defensa de los Afiliados a la Seguridad Social (DIDA): Está a cargo de la provisión de información y gestiones de reclamos y quejas de los afiliados. La asistencia incluye: información sobre los derechos y deberes de los afiliados, interponer recursos e instancias amigables y contenciosas, formular quejas y reclamaciones, ofrecer asesoría y defensoría a los casos de los afiliados hasta su resolución final, dentro del marco de las instancias del sistema</p>
+          </div>
+          <div class="line-yellow"></div>
+          <div class="button-menu">
+            <input class="btn-menu" type="button" value="Volver al menú" />
+          </div>
         </div>
       </div>
   </div>
