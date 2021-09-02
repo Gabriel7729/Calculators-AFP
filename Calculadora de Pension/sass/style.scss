@@ -7,19 +7,20 @@
       height: 5px;
     }
     .content-wrapper{
+      width: 100%;
       margin:auto;
-      background: linear-gradient(to right, #e97c29 40%, #fcbc46 100%);
-      clip-path: polygon(24% 0, 77% 0, 76% 80%, 25% 80%);
+      background: linear-gradient(to right, #e97c29 0%, #fcbc46 100%);
+      clip-path: polygon(34% 0, 66% 0, 65% 70%, 35% 70%);
       padding: 1px;
       .section-title{
         width: 100%;
         color: white;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 700;
         text-transform: uppercase;
         margin: 0 auto 30px;
         text-align: center;
-        padding: 8px 8px 8px 18px;
+        padding: 4px 8px 4px 18px;
         position: relative;
       }
       // .section-title {
