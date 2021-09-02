@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap");
 .pension-calculator .header-container .line {
   width: 100%;
   margin: auto;
@@ -21,6 +22,44 @@
   text-align: center;
   padding: 4px 8px 4px 18px;
   position: relative;
+}
+.pension-calculator .container .form-container {
+  width: 830px;
+  margin: 0 auto;
+  border: solid 3px #ffc03f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top: 20px solid #ffc03f;
+  padding: 10px 40px 40px 40px;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-size: 15px;
+  text-align: left;
+  border-collapse: collapse;
+}
+.pension-calculator .container .tabs .ul-tabs {
+  margin-bottom: -5px;
+  margin-left: 5px;
+  list-style: none;
+  display: flex;
+  width: 780px;
+  margin: auto;
+  padding: unset;
+}
+.pension-calculator .container .tabs .tab1 {
+  background: none;
+  margin-bottom: -2px;
+  margin: 0 -30px -2px -20px;
+}
+.pension-calculator .container .tabs .tab2 {
+  background: none;
+  margin-bottom: -2px;
+}
+.pension-calculator .container .tabs .tab3 {
+  background: none;
+  margin-bottom: -2px;
+  margin-left: -19px;
 }
 
 /*# sourceMappingURL=style.css.map */

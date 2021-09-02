@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap');
+
 .pension-calculator {
   .header-container {
     .line {
@@ -45,4 +47,55 @@
       // }
     }
   }
+  .container{
+    .form-container{
+      width: 830px;
+      margin: 0 auto;
+      border: solid 3px #ffc03f;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-top: 20px solid #ffc03f;
+      padding: 10px 40px 40px 40px;
+      font-family: 'IBM Plex Sans Devanagari', sans-serif;
+      font-size: 15px;
+      text-align: left;
+      border-collapse: collapse;
+
+      
+
+      
+      
+    }.tabs{
+      
+    .ul-tabs {
+      margin-bottom: -5px;
+      margin-left: 5px;
+      list-style: none;
+      display: flex;
+      width: 780px;
+      margin: auto;
+      padding: unset;
+
+      
+    }.tab1{
+      background:none; 
+      margin-bottom:-2px; 
+      margin:0 -30px -2px -20px;
+    }.tab2{
+      background:none; 
+      margin-bottom:-2px;
+    }.tab3{
+      background:none;
+      margin-bottom:-2px; 
+      margin-left:-19px;
+    }#tabsin .calculadora table td{
+
+    }
+div:not(:first-child) {
+
+}
+  }
+}
 }
