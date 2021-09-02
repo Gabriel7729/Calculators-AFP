@@ -22,5 +22,16 @@
   padding: 4px 8px 4px 18px;
   position: relative;
 }
+.pension-calculator .container .form-container {
+  width: 830px;
+  margin: 0 auto;
+  border: solid 3px #ffc03f;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top: 20px solid #ffc03f;
+  padding: 10px 40px 40px 40px;
+}
 
 /*# sourceMappingURL=style.css.map */
