@@ -1,0 +1,11 @@
+input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: #FFC03F;
+  outline: 0 none;
+}
+.input-form{
+  width: 150px;
+  padding: 3px 5px 5px 8px;
+  color: #666666;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}

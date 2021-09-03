@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap');
+@import "system";
 
 .pension-calculator {
   .container{
@@ -7,12 +7,12 @@
     .form-container{
       width: 100%;
       margin: 0 auto 50px;
-      border: solid 3px #ffc03f;
+      border: solid 3px $border-color;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-top: 20px solid #ffc03f;
+      border-top: 20px solid $border-color;
       padding: 10px 40px 40px 40px;
       font-family: 'IBM Plex Sans Devanagari', sans-serif;
       font-size: 15px;
@@ -26,30 +26,18 @@
             justify-content: space-between;
             align-items: baseline;
             font-family: EvaPro Bold;
-            border-bottom: 1px solid #ffc03f;
-            color: #808285;
+            border-bottom: 1px solid $border-color;
+            color: $color-font-text;
             padding: 8px 0 8px 0;
             .box-icon-text{
               display: flex;
               justify-content: flex-start;
               align-items: baseline;
               font-family: EvaPro Bold;
-              color: #808285;
               .text{
                 margin-top: 10px;
                 margin-left: 10px;
               }
-            }
-            input:focus, input[type]:focus, .uneditable-input:focus {   
-              border-color: #FFC03F;
-              outline: 0 none;
-            }
-            .input-form{
-              width: 150px;
-              padding: 3px 5px 5px 8px;
-              color: #666666;
-              border: 1px solid #ccc;
-              background: #ffffff;
             }
             .genre-radio-button{
               padding: 0 8px 0 8px;
@@ -58,25 +46,13 @@
               }
             }
           }
-          .buttons{
-            margin-top: 10px;
-            text-align: center;
-            .btn{
-              font-weight: bold;
-              padding: 5px 8px;
-              font-size: 14px;
-              margin-top: 8px;
-              background: #147ec5;
-              color: #ffffff;
-              border: none;
-              border-radius: 5px;
-            }
-          }
+
         }
         .important-information-content{
+          margin-top: 60px;
           .text-information{
             font-family: EvaPro Bold;
-            color: #808285;
+            color: $color-font-text;
             .title{
               font-size: 23px;
               margin-top: 30px;

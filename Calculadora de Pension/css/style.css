@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap");
+.buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.buttons .btn {
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 14px;
+  margin-top: 8px;
+  background: #147ec5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus, input[type]:focus, .uneditable-input:focus {
+  border-color: #FFC03F;
+  outline: 0 none;
+}
+
+.input-form {
+  width: 150px;
+  padding: 3px 5px 5px 8px;
+  color: #666666;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+
 .pension-calculator .container {
   max-width: 830px;
   margin-top: 30px;
@@ -32,22 +60,10 @@
   justify-content: flex-start;
   align-items: baseline;
   font-family: EvaPro Bold;
-  color: #808285;
 }
 .pension-calculator .container .form-container .tab-content .calculate-content .box .box-icon-text .text {
   margin-top: 10px;
   margin-left: 10px;
-}
-.pension-calculator .container .form-container .tab-content .calculate-content .box input:focus, .pension-calculator .container .form-container .tab-content .calculate-content .box input[type]:focus, .pension-calculator .container .form-container .tab-content .calculate-content .box .uneditable-input:focus {
-  border-color: #FFC03F;
-  outline: 0 none;
-}
-.pension-calculator .container .form-container .tab-content .calculate-content .box .input-form {
-  width: 150px;
-  padding: 3px 5px 5px 8px;
-  color: #666666;
-  border: 1px solid #ccc;
-  background: #ffffff;
 }
 .pension-calculator .container .form-container .tab-content .calculate-content .box .genre-radio-button {
   padding: 0 8px 0 8px;
@@ -55,19 +71,8 @@
 .pension-calculator .container .form-container .tab-content .calculate-content .box .genre-radio-button .sex_radio {
   margin: 0 8px 0 8px;
 }
-.pension-calculator .container .form-container .tab-content .calculate-content .buttons {
-  margin-top: 10px;
-  text-align: center;
-}
-.pension-calculator .container .form-container .tab-content .calculate-content .buttons .btn {
-  font-weight: bold;
-  padding: 5px 8px;
-  font-size: 14px;
-  margin-top: 8px;
-  background: #147ec5;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
+.pension-calculator .container .form-container .tab-content .important-information-content {
+  margin-top: 60px;
 }
 .pension-calculator .container .form-container .tab-content .important-information-content .text-information {
   font-family: EvaPro Bold;

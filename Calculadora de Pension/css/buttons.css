@@ -1,0 +1,16 @@
+.buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.buttons .btn {
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 14px;
+  margin-top: 8px;
+  background: #147ec5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=buttons.css.map */
