@@ -262,18 +262,6 @@
   }
 }
 
-@media only screen and (max-width:470px){
-  .contribution-calculator{
-    .container{
-      .tables{
-        .some-overflow{
-          overflow-x: scroll;
-        }
-      }
-    }
-  }
-}
-
 @media only screen and (max-width:720px){
   .contribution-calculator{
     .form-container{
@@ -295,6 +283,18 @@
               margin-top: 20px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:470px){
+  .contribution-calculator{
+    .container{
+      .tables{
+        .some-overflow{
+          overflow-x: scroll;
         }
       }
     }
