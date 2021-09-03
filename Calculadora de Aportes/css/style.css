@@ -1,17 +1,17 @@
-.pension-calculator .header-container .line {
+.contribution-calculator .header-container .line {
   width: 100%;
   margin: auto;
   background: linear-gradient(to right, #e97c29 12%, #fcbc46 100%);
   height: 5px;
 }
-.pension-calculator .header-container .content-wrapper {
+.contribution-calculator .header-container .content-wrapper {
   width: 100%;
   margin: auto;
   background: linear-gradient(to right, #e97c29 12%, #fcbc46 100%);
   clip-path: polygon(34% 0, 66% 0, 65% 70%, 35% 70%);
   padding: 1px;
 }
-.pension-calculator .header-container .content-wrapper .section-title {
+.contribution-calculator .header-container .content-wrapper .section-title {
   width: 100%;
   color: white;
   font-size: 30px;
@@ -22,10 +22,10 @@
   padding: 4px 8px 4px 18px;
   position: relative;
 }
-.pension-calculator .container {
+.contribution-calculator .container {
   max-width: 830px;
 }
-.pension-calculator .container .form-container {
+.contribution-calculator .container .form-container {
   width: 100%;
   margin: 0 auto;
   border: solid 3px #ffc03f;
@@ -37,41 +37,45 @@
   padding: 10px 40px 40px 40px;
   margin-bottom: 50px;
 }
-.pension-calculator .container .form-container .form {
+.contribution-calculator .container .form-container .form {
   margin-top: 8px;
   padding: 0 12px 0 12px;
   display: flex;
   justify-content: space-between;
 }
-.pension-calculator .container .form-container .form .label {
+.contribution-calculator .container .form-container .form .label {
   padding: 0 0 0 8px;
   font-size: 14px;
   font-weight: 600;
   color: #666666;
 }
-.pension-calculator .container .form-container .form .input {
+.contribution-calculator .container .form-container .form .input {
   max-width: 250px;
 }
-.pension-calculator .container .form-container .form .input .input-form {
+.contribution-calculator .container .form-container .form .input input:focus, .contribution-calculator .container .form-container .form .input input[type]:focus, .contribution-calculator .container .form-container .form .input .uneditable-input:focus {
+  border-color: #FFC03F;
+  outline: 0 none;
+}
+.contribution-calculator .container .form-container .form .input .input-form {
   width: 100%;
   padding: 3px 5px 5px 8px;
   color: #666666;
   border: 1px solid #ccc;
   background: #ffffff;
 }
-.pension-calculator .container .form-container .form .input .text-under-input {
+.contribution-calculator .container .form-container .form .input .text-under-input {
   font-size: 12px;
   font-weight: 600;
   color: #666666;
 }
-.pension-calculator .container .form-container .form .btn-calculate .btn.btn-primary {
+.contribution-calculator .container .form-container .form .btn-calculate .btn.btn-primary {
   border-radius: 5px;
   padding: 5px 8px;
   font-size: 16px;
   background: #147ec5;
   color: #ffffff;
 }
-.pension-calculator .container .title-table p {
+.contribution-calculator .container .title-table p {
   background: #fbb33b;
   text-align: center;
   color: #ffffff;
@@ -81,30 +85,30 @@
   margin-top: 28px;
   margin-bottom: 0;
 }
-.pension-calculator .container .tables .table {
+.contribution-calculator .container .tables .some-overflow .table {
   width: 100%;
 }
-.pension-calculator .container .tables .table .firts-row {
+.contribution-calculator .container .tables .some-overflow .table .firts-row {
   padding: 0 0 0 8px;
   padding-bottom: 5px;
   border-bottom: 1px solid #ffc03f;
   text-align: center;
   color: #666666;
-  font-size: 14px;
+  font: 12px EvaPro, Trebuchet MS, sans-serif;
   font-weight: 600;
   line-height: 20px;
 }
-.pension-calculator .container .tables .table .firts-row.td-blank {
+.contribution-calculator .container .tables .some-overflow .table .firts-row.td-blank {
   width: 40%;
 }
-.pension-calculator .container .tables .table .firts-row.td-distribution {
+.contribution-calculator .container .tables .some-overflow .table .firts-row.td-distribution {
   width: 20%;
   text-align: center;
 }
-.pension-calculator .container .tables .table .firts-row.td-blank-total {
+.contribution-calculator .container .tables .some-overflow .table .firts-row.td-blank-total {
   width: 20%;
 }
-.pension-calculator .container .tables .table .table-header {
+.contribution-calculator .container .tables .some-overflow .table .table-header {
   background: #147ec5;
   border-bottom: 1px solid #ffc03f;
   border-top: 1px solid #ffc03f;
@@ -115,33 +119,33 @@
   font-weight: bold;
   line-height: 20px;
 }
-.pension-calculator .container .tables .table .table-header.th-blank {
+.contribution-calculator .container .tables .some-overflow .table .table-header.th-blank {
   width: 40%;
 }
-.pension-calculator .container .tables .table .table-header.th-pension {
+.contribution-calculator .container .tables .some-overflow .table .table-header.th-pension {
   width: 20%;
 }
-.pension-calculator .container .tables .table .table-header.th-total {
+.contribution-calculator .container .tables .some-overflow .table .table-header.th-total {
   width: 20%;
 }
-.pension-calculator .container .tables .table .table-content {
+.contribution-calculator .container .tables .some-overflow .table .table-content {
   color: #666666;
   padding: 2px 0 2px 8px;
   border-bottom: 1px solid #ffc03f;
   font-size: 14px;
   font-weight: 600;
 }
-.pension-calculator .container .tables .table .table-content.td-content-pension {
+.contribution-calculator .container .tables .some-overflow .table .table-content.td-content-pension {
   text-align: center;
 }
-.pension-calculator .container .tables .table .table-content.td-content-total {
+.contribution-calculator .container .tables .some-overflow .table .table-content.td-content-total {
   text-align: center;
 }
-.pension-calculator .container .tables .table-distribution {
+.contribution-calculator .container .tables .table-distribution {
   margin-top: 26px;
   width: 100%;
 }
-.pension-calculator .container .tables .table-distribution .table-header {
+.contribution-calculator .container .tables .table-distribution .table-header {
   background: #147ec5;
   border-bottom: 1px solid #ffc03f;
   border-top: 1px solid #ffc03f;
@@ -152,26 +156,26 @@
   font-weight: bold;
   line-height: 20px;
 }
-.pension-calculator .container .tables .table-distribution .table-header.th-blank {
+.contribution-calculator .container .tables .table-distribution .table-header.th-blank {
   width: 40%;
 }
-.pension-calculator .container .tables .table-distribution .table-header.th-pension {
+.contribution-calculator .container .tables .table-distribution .table-header.th-pension {
   width: 20%;
 }
-.pension-calculator .container .tables .table-distribution .table-header.th-total {
+.contribution-calculator .container .tables .table-distribution .table-header.th-total {
   width: 15%;
 }
-.pension-calculator .container .tables .table-distribution .table-content {
+.contribution-calculator .container .tables .table-distribution .table-content {
   color: #666666;
   padding: 2px 0 2px 8px;
   border-bottom: 1px solid #ffc03f;
-  font-size: 14px;
+  font: 12px EvaPro, Trebuchet MS, sans-serif;
   font-weight: 600;
 }
-.pension-calculator .container .tables .table-distribution .table-content.td-content-pension {
+.contribution-calculator .container .tables .table-distribution .table-content.td-content-pension {
   text-align: center;
 }
-.pension-calculator .container .tables .table-distribution .table-content.td-content-total {
+.contribution-calculator .container .tables .table-distribution .table-content.td-content-total {
   background: #fbb33b;
   color: #ffffff;
   font-weight: bold;
@@ -179,24 +183,28 @@
   text-align: right;
   text-align: center;
 }
-.pension-calculator .container .tables .table-distribution .table-content-second {
+.contribution-calculator .container .tables .table-distribution .table-content-second {
   color: #666666;
   padding: 6px 0 6px 8px;
   border-bottom: 1px solid #ffc03f;
-  font-size: 14px;
+  font: 12px EvaPro, Trebuchet MS, sans-serif;
   font-weight: 600;
 }
-.pension-calculator .container .tables .table-distribution .table-content-second.td-content-pension {
-  text-align: center;
+.contribution-calculator .container .tables .table-distribution .table-content-second.td-content-blank {
+  width: 40%;
 }
-.pension-calculator .container .tables .table-distribution .table-content-second.td-content-total {
+.contribution-calculator .container .tables .table-distribution .table-content-second.td-content-pension {
+  text-align: center;
+  width: 20%;
+}
+.contribution-calculator .container .tables .table-distribution .table-content-second.td-content-total {
   background: #fbb33b;
   color: #ffffff;
   font-weight: bold;
   padding: 5px;
   text-align: right;
 }
-.pension-calculator .container .note {
+.contribution-calculator .container .note {
   border: solid 1px #ffc03f;
   border-left: 0;
   border-right: 0;
@@ -210,22 +218,22 @@
   background: #eee;
   padding: 10px 10px 1px 10px;
 }
-.pension-calculator .container .text {
+.contribution-calculator .container .text {
   margin-top: 20px;
   color: #666666;
   padding: 0 0 0 8px;
-  font-size: 10px/48px;
-  font: normal normal normal 14px/24px Coolvetica;
-  font-weight: 600;
+  text-align: justify;
+  font: 14px EvaPro, Trebuchet MS, sans-serif;
+  line-height: 25px;
 }
-.pension-calculator .container .line-yellow {
+.contribution-calculator .container .line-yellow {
   margin-top: 40px;
   border-bottom: 1px solid #ffc03f;
 }
-.pension-calculator .container .button-menu {
+.contribution-calculator .container .button-menu {
   text-align: center;
 }
-.pension-calculator .container .button-menu .btn-menu {
+.contribution-calculator .container .button-menu .btn-menu {
   font-weight: bold;
   padding: 5px 8px;
   font-size: 16px;
@@ -234,6 +242,28 @@
   color: #ffffff;
   border: none;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 470px) {
+  .contribution-calculator .container .tables .some-overflow {
+    overflow-x: scroll;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .contribution-calculator .form-container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contribution-calculator .form-container .form .label {
+    text-align: center;
+  }
+  .contribution-calculator .form-container .form .input .text-under-input {
+    text-align: center;
+  }
+  .contribution-calculator .form-container .form .btn-calculate .btn.btn-primary {
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

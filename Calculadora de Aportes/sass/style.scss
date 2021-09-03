@@ -1,4 +1,4 @@
-.pension-calculator {
+.contribution-calculator {
   .header-container {
     .line {
       width: 100%;
@@ -51,6 +51,10 @@
         }
         .input{
           max-width: 250px;
+          input:focus, input[type]:focus, .uneditable-input:focus {   
+            border-color: #FFC03F;
+            outline: 0 none;
+          }
           .input-form{
             width: 100%;
             padding: 3px 5px 5px 8px;
@@ -72,7 +76,6 @@
               font-size: 16px;
               background: #147ec5;
               color: #ffffff;
-              //padding: 4px 5px 4px 5px;
             }
           }
         }
@@ -90,60 +93,62 @@
     }
 
     .tables{
-      .table{
-        width: 100%;
-        .firts-row{
-          padding: 0 0 0 8px;
-          padding-bottom: 5px;
-          border-bottom: 1px solid #ffc03f;
-          text-align: center;
-          color: #666666;
-          font-size: 14px;
-          font-weight: 600;
-          line-height: 20px;
-          &.td-blank{
-            width: 40%;
-          }
-          &.td-distribution{
-            width: 20%;
+      .some-overflow{
+        .table{
+          width: 100%;
+          .firts-row{
+            padding: 0 0 0 8px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ffc03f;
             text-align: center;
-            
+            color: #666666;
+            font: 12px EvaPro, Trebuchet MS, sans-serif;  
+            font-weight: 600;
+            line-height: 20px;
+            &.td-blank{
+              width: 40%;
+            }
+            &.td-distribution{
+              width: 20%;
+              text-align: center;
+              
+            }
+            &.td-blank-total{
+              width: 20%;
+            }
           }
-          &.td-blank-total{
-            width: 20%;
-          }
-        }
-        .table-header{
-          background: #147ec5;
-          border-bottom: 1px solid #ffc03f;
-          border-top: 1px solid #ffc03f;
-          padding: 0 0 0 8px;
-          text-align: center;
-          color: #ffffff;
-          font-size: 14px;
-          font-weight: bold;
-          line-height: 20px;
-          &.th-blank{
-            width: 40%;
-          }
-          &.th-pension{
-            width: 20%;
-          }
-          &.th-total{
-            width: 20%;
-          }
-        }
-        .table-content{
-          color: #666666;
-          padding: 2px 0 2px 8px;
-          border-bottom: 1px solid #ffc03f;
-          font-size: 14px;
-          font-weight: 600;
-          &.td-content-pension{
+          .table-header{
+            background: #147ec5;
+            border-bottom: 1px solid #ffc03f;
+            border-top: 1px solid #ffc03f;
+            padding: 0 0 0 8px;
             text-align: center;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 20px;
+            &.th-blank{
+              width: 40%;
+            }
+            &.th-pension{
+              width: 20%;
+            }
+            &.th-total{
+              width: 20%;
+            }
           }
-          &.td-content-total{
-            text-align: center;
+          .table-content{
+            color: #666666;
+            padding: 2px 0 2px 8px;
+            border-bottom: 1px solid #ffc03f;
+            font-size: 14px;
+            font-weight: 600;
+            &.td-content-pension{
+              text-align: center;
+            }
+            &.td-content-total{
+              text-align: center;
+            }
           }
         }
       }
@@ -174,7 +179,7 @@
           color: #666666;
           padding: 2px 0 2px 8px;
           border-bottom: 1px solid #ffc03f;
-          font-size: 14px;
+          font: 12px EvaPro, Trebuchet MS, sans-serif;  
           font-weight: 600;
           &.td-content-pension{
             text-align: center;
@@ -192,10 +197,14 @@
           color: #666666;
           padding: 6px 0 6px 8px;
           border-bottom: 1px solid #ffc03f;
-          font-size: 14px;
+          font: 12px EvaPro, Trebuchet MS, sans-serif;  
           font-weight: 600;
+          &.td-content-blank{
+            width: 40%;
+          }
           &.td-content-pension{
             text-align: center;
+            width: 20%;
           }
           &.td-content-total{
             background: #fbb33b;
@@ -226,9 +235,9 @@
       margin-top: 20px;
       color: #666666;
       padding: 0 0 0 8px;
-      font-size: 10px/48px;
-      font: normal normal normal 14px/24px Coolvetica;
-      font-weight: 600;
+      text-align: justify;
+      font: 14px EvaPro, Trebuchet MS, sans-serif;      
+      line-height: 25px;
     }
 
     .line-yellow{
@@ -250,5 +259,44 @@
       }
     }
 
+  }
+}
+
+@media only screen and (max-width:470px){
+  .contribution-calculator{
+    .container{
+      .tables{
+        .some-overflow{
+          overflow-x: scroll;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:720px){
+  .contribution-calculator{
+    .form-container{
+      .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .label{
+          text-align: center;
+        }
+        .input{
+          .text-under-input{
+            text-align: center;
+          }
+        }
+        .btn-calculate{
+          .btn{
+            &.btn-primary{
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }
