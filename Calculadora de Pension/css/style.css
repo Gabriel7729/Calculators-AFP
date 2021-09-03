@@ -15,7 +15,7 @@
 }
 
 input:focus, input[type]:focus, .uneditable-input:focus {
-  border-color: #FFC03F;
+  border-color: #ffc03f;
   outline: 0 none;
 }
 
