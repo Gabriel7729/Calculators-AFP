@@ -1,0 +1,19 @@
+.input{
+  max-width: 250px;
+  input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: $primary;
+    outline: 0 none;
+  }
+  .input-form{
+    width: 100%;
+    padding: 3px 5px 5px 8px;
+    color: $accent;
+    border: 1px solid #ccc;
+    background: #ffffff;
+  }
+  .text-under-input{
+    font-size: 12px;
+    font-weight: 600;
+    color: $accent;
+  }
+}

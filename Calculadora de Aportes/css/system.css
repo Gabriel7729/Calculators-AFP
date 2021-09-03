@@ -1,0 +1,43 @@
+.btn-calculate .btn.btn-primary {
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 16px;
+  background: #147ec5;
+  color: #ffffff;
+}
+
+.button-menu {
+  text-align: center;
+}
+.button-menu .btn-menu {
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 16px;
+  margin-top: 8px;
+  background: #147ec5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.input {
+  max-width: 250px;
+}
+.input input:focus, .input input[type]:focus, .input .uneditable-input:focus {
+  border-color: #FFC03F;
+  outline: 0 none;
+}
+.input .input-form {
+  width: 100%;
+  padding: 3px 5px 5px 8px;
+  color: #666666;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+.input .text-under-input {
+  font-size: 12px;
+  font-weight: 600;
+  color: #666666;
+}
+
+/*# sourceMappingURL=system.css.map */

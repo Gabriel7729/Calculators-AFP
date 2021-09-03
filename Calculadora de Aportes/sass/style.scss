@@ -1,41 +1,18 @@
+@import "system";
+
 .contribution-calculator {
-  .header-container {
-    .line {
-      width: 100%;
-      margin: auto;
-      background: linear-gradient(to right, #e97c29 12%, #fcbc46 100%);
-      height: 5px;
-    }
-    .content-wrapper{
-      width: 100%;
-      margin:auto;
-      background: linear-gradient(to right, #e97c29 12%, #fcbc46 100%);
-      clip-path: polygon(34% 0, 66% 0, 65% 70%, 35% 70%);
-      padding: 1px;
-      .section-title{
-        width: 100%;
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 0 auto 30px;
-        text-align: center;
-        padding: 4px 8px 4px 18px;
-        position: relative;
-      }
-    }
-  }
   .container{
     max-width: 830px;
+    margin-top: 30px;
     .form-container{
       width: 100%;
       margin: 0 auto;
-      border: solid 3px #ffc03f;
+      border: solid 3px $primary;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
-      border-top: 20px solid #ffc03f;
+      border-top: 20px solid $primary;
       padding: 10px 40px 40px 40px;
       margin-bottom: 50px;
       .form{
@@ -47,42 +24,12 @@
           padding: 0 0 0 8px;
           font-size: 14px;
           font-weight: 600;
-          color: #666666;
-        }
-        .input{
-          max-width: 250px;
-          input:focus, input[type]:focus, .uneditable-input:focus {   
-            border-color: #FFC03F;
-            outline: 0 none;
-          }
-          .input-form{
-            width: 100%;
-            padding: 3px 5px 5px 8px;
-            color: #666666;
-            border: 1px solid #ccc;
-            background: #ffffff;
-          }
-          .text-under-input{
-            font-size: 12px;
-            font-weight: 600;
-            color: #666666;
-          }
-        }
-        .btn-calculate{
-          .btn{
-            &.btn-primary{
-              border-radius: 5px;
-              padding: 5px 8px;
-              font-size: 16px;
-              background: #147ec5;
-              color: #ffffff;
-            }
-          }
+          color: $accent;
         }
       }
     }
     .title-table p{
-      background: #fbb33b;
+      background: $primary-secundary;
       text-align: center;
       color: #ffffff;
       font-size: 16px;
@@ -93,62 +40,60 @@
     }
 
     .tables{
-      .some-overflow{
-        .table{
-          width: 100%;
-          .firts-row{
-            padding: 0 0 0 8px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #ffc03f;
-            text-align: center;
-            color: #666666;
-            font: 12px EvaPro, Trebuchet MS, sans-serif;  
-            font-weight: 600;
-            line-height: 20px;
-            &.td-blank{
-              width: 40%;
-            }
-            &.td-distribution{
-              width: 20%;
-              text-align: center;
-              
-            }
-            &.td-blank-total{
-              width: 20%;
-            }
+      .table{
+        width: 100%;
+        .firts-row{
+          padding: 0 0 0 8px;
+          padding-bottom: 5px;
+          border-bottom: 1px solid $primary;
+          text-align: center;
+          color: $accent;
+          font: 12px EvaPro, Trebuchet MS, sans-serif;  
+          font-weight: 600;
+          line-height: 20px;
+          &.td-blank{
+            width: 40%;
           }
-          .table-header{
-            background: #147ec5;
-            border-bottom: 1px solid #ffc03f;
-            border-top: 1px solid #ffc03f;
-            padding: 0 0 0 8px;
+          &.td-distribution{
+            width: 20%;
             text-align: center;
-            color: #ffffff;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 20px;
-            &.th-blank{
-              width: 40%;
-            }
-            &.th-pension{
-              width: 20%;
-            }
-            &.th-total{
-              width: 20%;
-            }
+            
           }
-          .table-content{
-            color: #666666;
-            padding: 2px 0 2px 8px;
-            border-bottom: 1px solid #ffc03f;
-            font-size: 14px;
-            font-weight: 600;
-            &.td-content-pension{
-              text-align: center;
-            }
-            &.td-content-total{
-              text-align: center;
-            }
+          &.td-blank-total{
+            width: 20%;
+          }
+        }
+        .table-header{
+          background: $secundary;
+          border-bottom: 1px solid $primary;
+          border-top: 1px solid $primary;
+          padding: 0 0 0 8px;
+          text-align: center;
+          color: #ffffff;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 20px;
+          &.th-blank{
+            width: 40%;
+          }
+          &.th-pension{
+            width: 20%;
+          }
+          &.th-total{
+            width: 20%;
+          }
+        }
+        .table-content{
+          color: $accent;
+          padding: 2px 0 2px 8px;
+          border-bottom: 1px solid $primary;
+          font-size: 14px;
+          font-weight: 600;
+          &.td-content-pension{
+            text-align: center;
+          }
+          &.td-content-total{
+            text-align: center;
           }
         }
       }
@@ -156,12 +101,12 @@
         margin-top: 26px;
         width: 100%;
         .table-header{
-          background: #147ec5;
-          border-bottom: 1px solid #ffc03f;
-          border-top: 1px solid #ffc03f;
+          background: $secundary;
+          border-bottom: 1px solid $primary;
+          border-top: 1px solid $primary;
           padding: 0 0 0 8px;
           text-align: center;
-          color: #fbb33b;
+          color: $primary-secundary;
           font-size: 12px;
           font-weight: bold;
           line-height: 20px;
@@ -178,14 +123,14 @@
         .table-content{
           color: #666666;
           padding: 2px 0 2px 8px;
-          border-bottom: 1px solid #ffc03f;
+          border-bottom: 1px solid $primary;
           font: 12px EvaPro, Trebuchet MS, sans-serif;  
           font-weight: 600;
           &.td-content-pension{
             text-align: center;
           }
           &.td-content-total{
-            background: #fbb33b;
+            background: $primary-secundary;
             color: #ffffff;
             font-weight: bold;
             padding: 5px;
@@ -194,9 +139,9 @@
           }
         }
         .table-content-second{
-          color: #666666;
+          color: $accent;
           padding: 6px 0 6px 8px;
-          border-bottom: 1px solid #ffc03f;
+          border-bottom: 1px solid $primary;
           font: 12px EvaPro, Trebuchet MS, sans-serif;  
           font-weight: 600;
           &.td-content-blank{
@@ -207,7 +152,7 @@
             width: 20%;
           }
           &.td-content-total{
-            background: #fbb33b;
+            background: $primary-secundary;
             color: #ffffff;
             font-weight: bold;
             padding: 5px;
@@ -217,14 +162,14 @@
       }
     }
     .note{
-      border: solid 1px #ffc03f;
+      border: solid 1px $primary;
       border-left: 0;
       border-right: 0;
       margin-top: 25px;
       font-weight: 600;
       text-align: justify;
       font-style: normal;
-      color: #147ec5;
+      color: $secundary;
       font-size: 13px;
       line-height: 16px;
       background: #eee;
@@ -233,7 +178,7 @@
 
     .text{
       margin-top: 20px;
-      color: #666666;
+      color: $accent;
       padding: 0 0 0 8px;
       text-align: justify;
       font: 14px EvaPro, Trebuchet MS, sans-serif;      
@@ -242,23 +187,8 @@
 
     .line-yellow{
       margin-top: 40px;
-      border-bottom: 1px solid #ffc03f;
+      border-bottom: 1px solid $primary;
     }
-
-    .button-menu{
-      text-align: center;
-      .btn-menu{
-        font-weight: bold;
-        padding: 5px 8px;
-        font-size: 16px;
-        margin-top: 8px;
-        background: #147ec5;
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-      }
-    }
-
   }
 }
 
