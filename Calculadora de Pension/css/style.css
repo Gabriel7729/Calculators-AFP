@@ -1,31 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap");
-.pension-calculator .header-container .line {
-  width: 100%;
-  margin: auto;
-  background: linear-gradient(to right, #e97c29 40%, #fcbc46 100%);
-  height: 5px;
-}
-.pension-calculator .header-container .content-wrapper {
-  width: 100%;
-  margin: auto;
-  background: linear-gradient(to right, #e97c29 0%, #fcbc46 100%);
-  clip-path: polygon(34% 0, 66% 0, 65% 70%, 35% 70%);
-  padding: 1px;
-}
-.pension-calculator .header-container .content-wrapper .section-title {
-  width: 100%;
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 0 auto 30px;
-  text-align: center;
-  padding: 4px 8px 4px 18px;
-  position: relative;
+.pension-calculator .container {
+  max-width: 830px;
+  margin-top: 30px;
 }
 .pension-calculator .container .form-container {
-  width: 830px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto 50px;
   border: solid 3px #ffc03f;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -38,26 +18,93 @@
   text-align: left;
   border-collapse: collapse;
 }
-.pension-calculator .container .tabs .ul-tabs {
+.pension-calculator .container .form-container .tab-content .calculate-content .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: EvaPro Bold;
+  border-bottom: 1px solid #ffc03f;
+  color: #808285;
+  padding: 8px 0 8px 0;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box .box-icon-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  font-family: EvaPro Bold;
+  color: #808285;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box .box-icon-text .text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box input:focus, .pension-calculator .container .form-container .tab-content .calculate-content .box input[type]:focus, .pension-calculator .container .form-container .tab-content .calculate-content .box .uneditable-input:focus {
+  border-color: #FFC03F;
+  outline: 0 none;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box .input-form {
+  width: 150px;
+  padding: 3px 5px 5px 8px;
+  color: #666666;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box .genre-radio-button {
+  padding: 0 8px 0 8px;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .box .genre-radio-button .sex_radio {
+  margin: 0 8px 0 8px;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .buttons .btn {
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 14px;
+  margin-top: 8px;
+  background: #147ec5;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+.pension-calculator .container .form-container .tab-content .important-information-content .text-information {
+  font-family: EvaPro Bold;
+  color: #808285;
+}
+.pension-calculator .container .form-container .tab-content .important-information-content .text-information .title {
+  font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  font-weight: 800;
+  color: inherit;
+}
+.pension-calculator .container .form-container .tab-content .important-information-content .text-information .text-description {
+  font-size: 18px;
+  font-weight: 500;
+}
+.pension-calculator .container .tabs {
+  max-width: 780px;
+}
+.pension-calculator .container .tabs .nav {
   margin-bottom: -5px;
-  margin-left: 5px;
   list-style: none;
   display: flex;
-  width: 780px;
+  width: 100%;
   margin: auto;
   padding: unset;
 }
-.pension-calculator .container .tabs .tab1 {
+.pension-calculator .container .tabs .nav .tab {
   background: none;
-  margin-bottom: -2px;
-  margin: 0 -30px -2px -20px;
 }
-.pension-calculator .container .tabs .tab2 {
-  background: none;
+.pension-calculator .container .tabs .nav .tab.nav-calculate {
+  margin: 0 -30px -2px 0;
+}
+.pension-calculator .container .tabs .nav .tab.nav-result {
   margin-bottom: -2px;
 }
-.pension-calculator .container .tabs .tab3 {
-  background: none;
+.pension-calculator .container .tabs .nav .tab.nav-important {
   margin-bottom: -2px;
   margin-left: -19px;
 }
