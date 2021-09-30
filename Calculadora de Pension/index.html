@@ -44,21 +44,21 @@
                       <div class="icon"><img src="assets/icons/num1.jpg" alt=""></div>
                       <p class="text">Monto acumulado CCI a último Estado de cuenta</p>
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': inputErrorValidation}" type="text" v-model="accumulatedSalary" placeholder="0" v-on:keypress="isNumber()" />
+                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.accumulatedSalary}" type="text" v-model="accumulatedSalary" placeholder="0" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
                     <div class="box-icon-text">
                       <div class="icon"><img src="assets/icons/num2.jpg" alt=""></div>
                       <p class="text">Salario Actual</p>
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': inputErrorValidation}" type="text" v-model="currentSalary" v-on:keypress="isNumber()" />
+                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentSalary}" type="text" v-model="currentSalary" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
                     <div class="box-icon-text">
                       <div class="icon"><img src="assets/icons/num3.jpg" alt=""></div>
                       <p class="text">Edad Actual</p>
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': inputErrorValidation}" type="text" v-model="currentAge" v-on:keypress="isNumber()" />
+                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentAge}" type="text" v-model="currentAge" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
                     <div class="box-icon-text">
@@ -77,7 +77,7 @@
                       <div class="icon"><img src="assets/icons/num5.jpg" alt=""></div>
                       <p class="text">Edad deseada de retíro</p>
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': inputErrorValidation}" type="text" v-model="desiredRetirementAge" v-on:keypress="isNumber()" />
+                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.desiredRetirementAge}" type="text" v-model="desiredRetirementAge" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
                     <div class="box-icon-text">
