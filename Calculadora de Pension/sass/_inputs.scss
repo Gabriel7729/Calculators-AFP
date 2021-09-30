@@ -1,0 +1,20 @@
+.input-form input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: $primary;
+  outline: 0 none;
+}
+.input-form{
+  width: 150px;
+  padding: 3px 5px 5px 8px;
+  color: $accent-light;
+  border: 1px solid #ccc;
+  background: #ffffff;
+}
+
+.validation-error-input{
+  background: rgb(248, 219, 219);
+  border-color: rgb(231, 119, 118);
+}
+.input-form .validation-error-input input:focus, input[type]:focus, .uneditable-input:focus {   
+  border-color: rgb(231, 119, 118);
+  outline: 0 none;
+}

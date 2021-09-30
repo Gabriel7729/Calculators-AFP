@@ -21,6 +21,11 @@
 
       .tab-content{
         .calculate-content{
+          .message-validations{
+            p{
+              color: red;
+            }
+          }
           .box{
             display: flex;
             justify-content: space-between;

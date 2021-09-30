@@ -14,7 +14,7 @@
   border-radius: 5px;
 }
 
-input:focus, input[type]:focus, .uneditable-input:focus {
+.input-form input:focus, input[type]:focus, .uneditable-input:focus {
   border-color: #ffc03f;
   outline: 0 none;
 }
@@ -25,6 +25,16 @@ input:focus, input[type]:focus, .uneditable-input:focus {
   color: #666666;
   border: 1px solid #ccc;
   background: #ffffff;
+}
+
+.validation-error-input {
+  background: #f8dbdb;
+  border-color: #e77776;
+}
+
+.input-form .validation-error-input input:focus, input[type]:focus, .uneditable-input:focus {
+  border-color: #e77776;
+  outline: 0 none;
 }
 
 .pension-calculator .container {
@@ -45,6 +55,9 @@ input:focus, input[type]:focus, .uneditable-input:focus {
   font-size: 15px;
   text-align: left;
   border-collapse: collapse;
+}
+.pension-calculator .container .form-container .tab-content .calculate-content .message-validations p {
+  color: red;
 }
 .pension-calculator .container .form-container .tab-content .calculate-content .box {
   display: flex;
