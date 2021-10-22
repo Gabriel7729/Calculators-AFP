@@ -12,6 +12,15 @@ var instance = {
       messageErrors: false,
       validationCompleted: false,
       errorMessage: "",
+      result: {
+        constitutiveAmountRetirementDate: null,
+        constitutiveAmountDateOfRetirementVoluntaryContributions: null,
+        lastSalary: null,
+        monthlyPensionAmount: null,
+        monthlyPensionAmountVoluntaryContributions: null,
+        replacementRate: null,
+        replacementRateVoluntaryContributions: null
+      },
       input: {
         accumulatedSalary: false,
         currentSalary: false,
@@ -24,6 +33,7 @@ var instance = {
     validateField: function (){
       let showErrors = true;
       let removeErrors = false;
+      this.messageErrors = true;
 
       if(this.accumulatedSalary <= 0){
         this.resetInputValidations(removeErrors);
@@ -69,18 +79,29 @@ var instance = {
         this.input.desiredRetirementAge = showErrors;
         return this.showMessageValidation("Su edad actual no puede ser mayor que su edad de retiro.");
       }
+      this.messageErrors = false;
       this.resetInputValidations(removeErrors);
+      if(!this.messageErrors) return false;
+      return true;
     }
   },
   methods: {  
-      calculatePension: function () {
-        this.messageErrors = false;
-        if(!this.messageErrors){
-          this.messageErrors = true;
+      calculatePension: function (validation) {
+        if (!validation){
+          this.showResultsOfPensionCalculator(1200);
         }
       },
       showMessageValidation: function(message){
         return message;
+      },
+      showResultsOfPensionCalculator: function(apiResult) {
+        this.result.constitutiveAmountRetirementDate = apiResult;
+        this.result.constitutiveAmountDateOfRetirementVoluntaryContributions = apiResult;
+        this.result.lastSalary = apiResult;
+        this.result.monthlyPensionAmount = apiResult;
+        this.result.monthlyPensionAmountVoluntaryContributions = apiResult;
+        this.result.replacementRate = apiResult;
+        this.result.replacementRateVoluntaryContributions = apiResult;
       },
       cleanFields: function () {
         this.accumulatedSalary = null;
@@ -89,13 +110,6 @@ var instance = {
         this.gender = "M";
         this.desiredRetirementAge = null;
         this.extraPercentageSaved = null;
-      },
-      showResultTab: function(){
-        this.showTab = true;
-        this.formTab = false;
-      },
-      showValidations: function (valid) {
-        this.messageErrors = valid;
       },
       resetInputValidations: function (valid) {
         this.input.accumulatedSalary = valid;
