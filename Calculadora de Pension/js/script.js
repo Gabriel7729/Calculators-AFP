@@ -8,7 +8,11 @@ var instance = {
       desiredRetirementAge: null,
       extraPercentageSaved: null,
       showTab: false,
-      formTab: true,
+      tab: {
+        calculate: true,
+        results: false,
+        importantInformation: false
+      },
       messageErrors: false,
       validationCompleted: false,
       errorMessage: "",
@@ -91,6 +95,11 @@ var instance = {
           this.showResultsOfPensionCalculator(1200);
         }
       },
+      reCalculate: function () {
+        this.tab.calculate = true;
+        this.tab.results = false;
+        this.cleanFields();
+      },
       showMessageValidation: function(message){
         return message;
       },
@@ -102,6 +111,13 @@ var instance = {
         this.result.monthlyPensionAmountVoluntaryContributions = apiResult;
         this.result.replacementRate = apiResult;
         this.result.replacementRateVoluntaryContributions = apiResult;
+        this.showTabResults();
+      },
+      showTabResults: function () {
+        console.log(this.tab.calculate);
+        console.log(this.tab.results);
+        this.tab.calculate = false;
+        this.tab.results = true;
       },
       cleanFields: function () {
         this.accumulatedSalary = null;

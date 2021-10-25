@@ -34,7 +34,7 @@
         <div class="form-container">            
             <div class="tab-content" id="pills-tabContent">
 
-              <div class="tab-pane fade" v-bind:class="{ 'show active': formTab}" id="pills-calculate" role="tabpanel" aria-labelledby="pills-calculate-tab">
+              <div class="tab-pane fade" v-bind:class="{ 'show active': tab.calculate}" id="pills-calculate" role="tabpanel" aria-labelledby="pills-calculate-tab">
                 <div class="calculate-content mt-3">
                   <div class="message-validations">
                     <p v-if="messageErrors" class="text-center">{{ validateField }}</p>
@@ -96,7 +96,7 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade" v-bind:class="{ 'show active': showTab}" id="pills-result" role="tabpanel" aria-labelledby="pills-result-tab">
+              <div class="tab-pane fade" v-bind:class="{ 'show active': tab.results}" id="pills-result" role="tabpanel" aria-labelledby="pills-result-tab">
                 <div class="calculate-content mt-5">
                   <div class="box">
                     <div class="box-icon-text">
@@ -149,14 +149,14 @@
                   </div>
 
                   <div class="buttons">
-                    <input class="btn" type="button" value="Recalcular" />
+                    <input class="btn" type="button" @click="reCalculate()" value="Recalcular" />
                     <input class="btn" type="button" value="Volver al menú" />
                   </div>
 
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="pills-important" role="tabpanel" aria-labelledby="pills-important-tab">
+              <div class="tab-pane fade" v-bind:class="{ 'show active': tab.importantInformation}"  id="pills-important" role="tabpanel" aria-labelledby="pills-important-tab">
                 <div class="important-information-content">
                   <div class="text-information">
                     <h4 class="title">Información importante</h4>
