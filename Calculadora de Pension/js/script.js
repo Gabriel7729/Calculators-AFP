@@ -7,15 +7,12 @@ var instance = {
       gender: "M",
       desiredRetirementAge: null,
       extraPercentageSaved: null,
-      showTab: false,
       tab: {
         calculate: true,
         results: false,
         importantInformation: false
       },
       messageErrors: false,
-      validationCompleted: false,
-      errorMessage: "",
       result: {
         constitutiveAmountRetirementDate: null,
         constitutiveAmountDateOfRetirementVoluntaryContributions: null,
@@ -114,8 +111,6 @@ var instance = {
         this.showTabResults();
       },
       showTabResults: function () {
-        console.log(this.tab.calculate);
-        console.log(this.tab.results);
         this.tab.calculate = false;
         this.tab.results = true;
       },
