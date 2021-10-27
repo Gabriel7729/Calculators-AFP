@@ -40,51 +40,51 @@
                     <p v-if="messageErrors" class="text-center">{{ validateField }}</p>
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num1.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num1.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Monto acumulado CCI a último Estado de cuenta</p>
+                      <input class="input-form" v-bind:class="{ 'validation-error-input': input.accumulatedSalary}" type="text" v-model="accumulatedSalary" placeholder="0" v-on:keypress="isNumber()" />
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.accumulatedSalary}" type="text" v-model="accumulatedSalary" placeholder="0" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num2.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num2.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Salario Actual</p>
+                      <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentSalary}" type="text" v-model="currentSalary" v-on:keypress="isNumber()" />
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentSalary}" type="text" v-model="currentSalary" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num3.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num3.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Edad Actual</p>
+                      <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentAge}" type="text" v-model="currentAge" v-on:keypress="isNumber()" />
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.currentAge}" type="text" v-model="currentAge" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num4.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num4.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Género</p>
-                    </div>
-                    <div class="genre-radio-button">
-                      <input v-model="gender" class="sex_radio" id="male" name="male" type="radio" value="M" />
-                      <span>M</span>
-                      <input class="sex_radio" v-model="gender" id="female" name="female" type="radio" value="F" />
-                      <span>F</span>
+                      <div class="genre-radio-button">
+                        <input v-model="gender" class="sex_radio" id="male" name="male" type="radio" value="M" />
+                        <span>M</span>
+                        <input class="sex_radio" v-model="gender" id="female" name="female" type="radio" value="F" />
+                        <span>F</span>
+                      </div>
                     </div>
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num5.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num5.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Edad deseada de retíro</p>
+                      <input class="input-form" v-bind:class="{ 'validation-error-input': input.desiredRetirementAge}" type="text" v-model="desiredRetirementAge" v-on:keypress="isNumber()" />
                     </div>
-                    <input class="input-form" v-bind:class="{ 'validation-error-input': input.desiredRetirementAge}" type="text" v-model="desiredRetirementAge" v-on:keypress="isNumber()" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num6.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num6.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Porcentaje extra guardado al mes para el retiro</p>
+                      <input class="input-form" type="text" v-model="extraPercentageSaved" placeholder="0" v-on:keypress="isNumber()" />
                     </div>
-                    <input class="input-form" type="text" v-model="extraPercentageSaved" placeholder="0" v-on:keypress="isNumber()" />
                   </div>
 
                   <div class="buttons">
@@ -99,53 +99,53 @@
               <div class="tab-pane fade" v-bind:class="{ 'show active': tab.results}" id="pills-result" role="tabpanel" aria-labelledby="pills-result-tab">
                 <div class="calculate-content mt-5">
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num1.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num1.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">	Monto Constitutivo a la fecha de retiro</p>
+                      <input class="input-form" type="text" v-model="result.constitutiveAmountRetirementDate"  />
                     </div>
-                    <input class="input-form" type="text" v-model="result.constitutiveAmountRetirementDate"  />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num2.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num2.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Monto Constitutivo a la fecha de retiro con aportes voluntarios</p>
+                      <input class="input-form" v-model="result.constitutiveAmountDateOfRetirementVoluntaryContributions" type="text"  />
                     </div>
-                    <input class="input-form" v-model="result.constitutiveAmountDateOfRetirementVoluntaryContributions" type="text"  />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num3.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num3.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Ultimo salario</p>
+                      <input class="input-form" type="text" v-model="result.lastSalary" />
                     </div>
-                    <input class="input-form" type="text" v-model="result.lastSalary" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num4.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num4.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Monto pensión mensual</p>
+                      <input class="input-form" type="text" v-model="result.monthlyPensionAmount" />
                     </div>
-                    <input class="input-form" type="text" v-model="result.monthlyPensionAmount" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num5.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num5.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Monto pensión mensual con aportes voluntarios</p>
+                      <input class="input-form" type="text" v-model="result.monthlyPensionAmountVoluntaryContributions" />
                     </div>
-                    <input class="input-form" type="text" v-model="result.monthlyPensionAmountVoluntaryContributions" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num6.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num6.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">Tasa de reemplazo (%)</p>
+                      <input class="input-form" type="text" :value="result.replacementRate" />
                     </div>
-                    <input class="input-form" type="text" :value="result.replacementRate" />
                   </div>
                   <div class="box">
-                    <div class="box-icon-text">
-                      <div class="icon"><img src="assets/icons/num7.jpg" alt=""></div>
+                    <div class="icon"><img src="assets/icons/num7.jpg" alt=""></div>
+                    <div class="box-text-input">
                       <p class="text">	Tasa de reemplazo con aportes voluntarios (%)</p>
+                      <input class="input-form" type="text" v-model="result.replacementRateVoluntaryContributions" />
                     </div>
-                    <input class="input-form" type="text" v-model="result.replacementRateVoluntaryContributions" />
                   </div>
 
                   <div class="buttons">

@@ -1,1 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@300&display=swap');
+@font-face {
+    font-family: evaNormal;
+    src: url(../assets/fonts/EvaPro-Normal.otf);
+  }
+  @font-face {
+    font-family: evaSemiBold;
+    src: url(../assets/fonts/EvaPro-SemiBold.otf);
+  }
+  @font-face {
+    font-family: evaBold;
+    src: url(../assets/fonts/EvaPro-Bold.otf);
+  }
+  @font-face {
+    font-family: evaBlack;
+    src: url(../assets/fonts/EvaPro-Bold.otf);
+  }
+
+  $evaNormal: evaNormal;
+  $evaSemiBold: evaSemiBold;
+  $evaBold:evaBold;
+  $evaBlack:evaBlack;
+  $linkNav: 13px;
+
+  h2{
+    font-size: 36px;
+    font-family: $evaBold;
+    margin-top: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
