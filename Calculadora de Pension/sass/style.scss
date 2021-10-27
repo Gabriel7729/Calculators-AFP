@@ -118,6 +118,7 @@
   .pension-calculator{
     .container{
       .form-container{
+        padding: 10px 20px 40px 20px;
         .tab-content{
           .calculate-content{
             .box{
@@ -134,6 +135,26 @@
                 .input-form{
                   width: 100%;
                 }
+              }
+            }
+          }
+          .important-information-content{
+            margin-top: 60px;
+            .text-information{
+              color: $accent;
+              .title{
+                font-family: evaBold;
+                font-size: 23px;
+                margin-top: 30px;
+                margin-bottom: 2px;
+                font-weight: 800;
+                color: inherit;
+                text-align: center;
+              }
+              .text-description{
+                font-size: 15px;
+                font-weight: 501;
+                font-weight: evaBlack;
               }
             }
           }
