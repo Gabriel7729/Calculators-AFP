@@ -98,9 +98,7 @@ var instance = {
   },
   methods: {  
       calculatePension: function (validation) {
-        // let afpFundsCalc = this.getOutputVariables(); 
         if (!validation){
-          alert("Debe ingresar todos los campos requeridos.");
           this.getOutputVariables();
         }
       },

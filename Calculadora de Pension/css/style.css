@@ -88,6 +88,10 @@ h2 {
   text-align: left;
   border-collapse: collapse;
 }
+.pension-calculator .container .form-container .tab-content .calculate-content .message-validations p {
+  color: Red;
+  font-size: 12px;
+}
 .pension-calculator .container .form-container .tab-content .calculate-content .box {
   display: flex;
   align-items: baseline;

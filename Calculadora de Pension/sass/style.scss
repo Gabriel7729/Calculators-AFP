@@ -36,6 +36,12 @@
 
       .tab-content{
         .calculate-content{
+          .message-validations{
+            p{
+              color: Red;
+              font-size: 12px;
+            }
+          }
           .box{
             display: flex;
             align-items: baseline;
