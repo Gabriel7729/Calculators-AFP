@@ -117,6 +117,11 @@
 
       }
     }
+    .tabs{
+      .responsive-buttons{
+        display: none;
+      }
+    }
   }
 }
 
@@ -124,6 +129,7 @@
   .pension-calculator{
     .container{
       .form-container{
+        border-top: 40px solid $primary;
         padding: 10px 20px 40px 20px;
         .tab-content{
           .calculate-content{
@@ -161,6 +167,75 @@
                 font-size: 15px;
                 font-weight: 501;
                 font-weight: evaBlack;
+              }
+            }
+          }
+        }
+      }
+      .tabs{
+        .nav{
+          justify-content: space-between;
+          width: 100%;
+          display: none;
+        }
+      }
+      .tabs{
+        .responsive-buttons{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          flex-wrap: unset;
+          list-style: none;
+          width: 97%;
+          margin: auto;
+          padding: unset;
+          margin-bottom: -31px;
+          .tab{
+            background:none;
+            @media only screen and (max-width:400px){
+              font-size: 13px;
+            }
+            &.nav-calculate{
+              button{
+                color: white;
+                background: none;
+                border: none;
+                border: none;
+                font: inherit;
+                cursor: pointer;
+              }
+
+              .active{
+                border-bottom: 2px solid #106DBD;
+              }
+
+            }
+            &.nav-result{
+              button{
+                color: white;
+                background: none;
+                border: none;
+                border: none;
+                font: inherit;
+                cursor: pointer;
+              }
+
+              .active{
+                border-bottom: 2px solid #106DBD;
+              }
+            }
+            &.nav-important{
+              button{
+                color: white;
+                background: none;
+                border: none;
+                border: none;
+                font: inherit;
+                cursor: pointer;
+              }
+
+              .active{
+                border-bottom: 2px solid #106DBD;
               }
             }
           }

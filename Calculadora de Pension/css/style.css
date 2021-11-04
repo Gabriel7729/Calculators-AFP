@@ -162,9 +162,13 @@ h2 {
   margin-bottom: -2px;
   margin-left: -19px;
 }
+.pension-calculator .container .tabs .responsive-buttons {
+  display: none;
+}
 
 @media only screen and (max-width: 515px) {
   .pension-calculator .container .form-container {
+    border-top: 40px solid #ffc03f;
     padding: 10px 20px 40px 20px;
   }
   .pension-calculator .container .form-container .tab-content .calculate-content .box {
@@ -202,6 +206,69 @@ h2 {
     font-size: 15px;
     font-weight: 501;
     font-weight: evaBlack;
+  }
+  .pension-calculator .container .tabs .nav {
+    justify-content: space-between;
+    width: 100%;
+    display: none;
+  }
+  .pension-calculator .container .tabs .responsive-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: unset;
+    list-style: none;
+    width: 97%;
+    margin: auto;
+    padding: unset;
+    margin-bottom: -31px;
+  }
+  .pension-calculator .container .tabs .responsive-buttons .tab {
+    background: none;
+  }
+}
+@media only screen and (max-width: 515px) and (max-width: 400px) {
+  .pension-calculator .container .tabs .responsive-buttons .tab {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-calculate button {
+    color: white;
+    background: none;
+    border: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-calculate .active {
+    border-bottom: 2px solid #106DBD;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-result button {
+    color: white;
+    background: none;
+    border: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-result .active {
+    border-bottom: 2px solid #106DBD;
+  }
+}
+@media only screen and (max-width: 515px) {
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-important button {
+    color: white;
+    background: none;
+    border: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  .pension-calculator .container .tabs .responsive-buttons .tab.nav-important .active {
+    border-bottom: 2px solid #106DBD;
   }
 }
 @media only screen and (max-width: 375px) {
